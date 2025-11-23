@@ -1,0 +1,53 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Loja de Tênis{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <!-- SEU CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    {% block extra_head %}{% endblock %}
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+      <div class="container">
+        <a class="navbar-brand" href="{% url 'home' %}">Loja de Tênis</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'home' %}">Início</a>
+            </li>
+            <li class="nav-item">
+              <!-- depois a gente cria a view/URL 'catalogo' -->
+              <a class="nav-link" href="#">Catálogo</a>
+            </li>
+            <li class="nav-item">
+              <!-- pode ser uma página de contato simples depois -->
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+            <li class="nav-item">
+              <!-- por enquanto manda pro admin do Django -->
+              <a class="nav-link" href="/admin/">Área administrativa</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mb-4">
+      {% block content %}{% endblock %}
+    </main>
+
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    {% block extra_js %}{% endblock %}
+  </body>
+</html>

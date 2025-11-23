@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block title %}Loja de Tênis Online{% endblock %}
+
+{% block content %}
+
+  <!-- HERO / BANNER -->
+  <div class="row align-items-center mb-5 hero-section">
+    <div class="col-md-6">
+      <h1 class="mb-3 hero-title">Os melhores tênis, sem sair de casa.</h1>
+      <p class="lead hero-lead">
+        Encontre tênis casuais e esportivos com conforto, estilo e preço justo.
+      </p>
+      <p>
+        Entrega rápida, produtos selecionados e uma experiência simples de compra.
+      </p>
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-primary btn-lg me-2 mb-2">
+          Ver catálogo completo
+        </a>
+        <a href="#" class="btn btn-outline-secondary btn-lg mb-2">
+          Fale conosco
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title mb-3">Destaques da semana</h5>
+
+          <div class="row g-3">
+            <div class="col-12 col-sm-6">
+              <div class="border rounded p-3 h-100 highlight-card">
+                <h6 class="mb-1">Tênis Running Pro</h6>
+                <small class="text-muted d-block mb-2">Corrida | Masculino</small>
+                <p class="mb-1 fw-bold">R$ 349,90</p>
+                <small class="text-success">Frete grátis Sul/Sudeste</small>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <div class="border rounded p-3 h-100 highlight-card">
+                <h6 class="mb-1">Tênis Casual Urban</h6>
+                <small class="text-muted d-block mb-2">Casual | Unissex</small>
+                <p class="mb-1 fw-bold">R$ 279,90</p>
+                <small class="text-success">10% OFF no Pix</small>
+              </div>
+            </div>
+          </div>
+
+          <small class="text-muted d-block mt-3">
+            Em breve estes produtos virão direto do banco de dados.
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VANTAGENS DA LOJA -->
+  <h2 class="mb-4">Por que comprar na nossa loja?</h2>
+
+  <div class="row g-4 mb-5">
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm feature-card">
+        <div class="card-body">
+          <h5 class="card-title">Seleção de marcas</h5>
+          <p class="card-text">
+            Trabalhamos apenas com marcas confiáveis e modelos selecionados.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm feature-card">
+        <div class="card-body">
+          <h5 class="card-title">Conforto garantido</h5>
+          <p class="card-text">
+            Foco em conforto e durabilidade, seja para o dia a dia ou para o treino.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm feature-card">
+        <div class="card-body">
+          <h5 class="card-title">Compra simples e segura</h5>
+          <p class="card-text">
+            Processo de compra direto, sem complicação, com suporte ao cliente.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHAMADA PARA O CATÁLOGO -->
+  <div class="bg-light p-4 rounded-3 mb-4 catalog-cta">
+    <div class="row align-items-center">
+      <div class="col-md-8">
+        <h3 class="mb-2">Pronto para escolher seu próximo tênis?</h3>
+        <p class="mb-0">
+          Acesse o catálogo e veja todos os modelos disponíveis.
+        </p>
+      </div>
+      <div class="col-md-4 text-md-end mt-3 mt-md-0">
+        <a href="#" class="btn btn-primary btn-lg">Ir para o catálogo</a>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

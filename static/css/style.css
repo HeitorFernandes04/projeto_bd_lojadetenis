@@ -1,0 +1,104 @@
+/* ===== ESTILOS GERAIS ===== */
+
+body {
+  background-color: #f5f5f5;
+}
+
+/* Deixa o conteúdo mais “centralizado” visualmente */
+main.container {
+  max-width: 1100px;
+}
+
+/* Cartões com sombra leve e cantos arredondados */
+.card {
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.card.shadow-sm {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 0.95rem;
+}
+
+/* ===== HOME: HERO ===== */
+
+.hero-section {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.hero-lead {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.hero-buttons .btn {
+  min-width: 180px;
+}
+
+/* ===== HOME: “DESTAQUES DA SEMANA” ===== */
+
+.highlight-card h6 {
+  font-weight: 600;
+}
+
+.highlight-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  background-color: #ffffff;
+}
+
+.highlight-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== HOME: VANTAGENS DA LOJA ===== */
+
+.feature-card {
+  background-color: #ffffff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card .card-title {
+  font-weight: 600;
+}
+
+/* ===== HOME: CHAMADA PARA O CATÁLOGO ===== */
+
+.catalog-cta {
+  border-radius: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* ===== RESPONSIVIDADE LEVE ===== */
+
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 1.9rem;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
